@@ -2,23 +2,67 @@
 <xs:schema  
 xmlns="http://xcri.org/profiles/catalog/terms" 
 xmlns:x="http://www.w3.org/1999/xhtml" 
-xmlns:xcri="http://xcri.org/profiles/1.2/catalog" 
+xmlns:xcri="http://xcri.org/profiles/catalog" 
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-xmlns:dc="http://purl.org/dc/elements/1.1/"
-targetNamespace="http://xcri.org/profiles/1.2/catalog/terms" 
+targetNamespace="http://xcri.org/profiles/catalog/terms" 
 elementFormDefault="qualified" 
 attributeFormDefault="unqualified">
 
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>	
 	<xs:import namespace="http://www.w3.org/1999/xhtml" schemaLocation="http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"/>
-	<xs:import namespace="http://xcri.org/profiles/1.2/catalog" schemaLocation="xcri_cap_1_2.xsd"/>
-	<xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
-    
+	<xs:import namespace="http://xcri.org/profiles/catalog" schemaLocation="http://www.xcri.org/bindings/xcri_cap_1_1.xsd"/>
+
 	<xs:annotation>
-		<xs:documentation xml:lang="en">See http://www.xcri.org/wiki/index.php/XCRI_Terms_1.2</xs:documentation>
+		<xs:documentation xml:lang="en">Element type refinements for use with XCRI Course Advertising Profile 1.1 XML. Created 2008-01-11.
+			Created by Alan Paull (alan@alanpaull.co.uk) Ben Ryan (ben.ryan@hotmail.com) Mark Stubbs(m.stubbs@mmu.ac.uk) Scott Wilson (scott.bradley.wilson@gmail.com). This schema declares type restrictions that demonstrate how generic metadata elements can be specialised, and declares enumerations for classifying presentation studyMode, attendanceMode and attendancePattern.
+		</xs:documentation>
 	</xs:annotation>
 
 	<!--- Start of extensible description vocabulary -->
+	<xs:complexType name="aim">
+		<xs:annotation>
+			<xs:documentation>Description refinement typically used to specify the aim of a course of study</xs:documentation>
+		</xs:annotation>	
+		<xs:complexContent mixed="true">
+			<xs:restriction base="xcri:descriptionDType">
+				<xs:sequence>
+					<xs:element ref="x:div" minOccurs="0" />
+				</xs:sequence>
+				<xs:attribute ref="xml:lang" use="optional"/>	
+				<xs:attribute name="href" type="xs:anyURI" use="optional" />
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="applicationProcedure">
+		<xs:annotation>
+			<xs:documentation>Description refinement typically used to specify the procedure for applying to a course of study</xs:documentation>
+		</xs:annotation>		
+		<xs:complexContent mixed="true">
+			<xs:restriction base="xcri:descriptionDType">
+				<xs:sequence>
+					<xs:element ref="x:div" minOccurs="0" />
+				</xs:sequence>
+				<xs:attribute ref="xml:lang" use="optional"/>	
+				<xs:attribute name="href" type="xs:anyURI" use="optional" />
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="assessmentStrategy">
+		<xs:annotation>
+			<xs:documentation>Description refinement typically used to specify the assessment strategy for a course of study</xs:documentation>
+		</xs:annotation>			
+		<xs:complexContent mixed="true">
+			<xs:restriction base="xcri:descriptionDType">
+				<xs:sequence>
+					<xs:element ref="x:div" minOccurs="0" />
+				</xs:sequence>
+				<xs:attribute ref="xml:lang" use="optional"/>	
+				<xs:attribute name="href" type="xs:anyURI" use="optional" />
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
 
 	<xs:complexType name="careerOutcome">
 		<xs:annotation>
@@ -109,6 +153,21 @@ attributeFormDefault="unqualified">
 			</xs:restriction>
 		</xs:complexContent>
 	</xs:complexType>
+
+	<xs:complexType name="learningOutcome">
+		<xs:annotation>
+			<xs:documentation>Description refinement typically used to specify learning outcomes for a course of study</xs:documentation>
+		</xs:annotation>	
+		<xs:complexContent mixed="true">
+			<xs:restriction base="xcri:descriptionDType">
+				<xs:sequence>
+					<xs:element ref="x:div" minOccurs="0" />
+				</xs:sequence>
+				<xs:attribute ref="xml:lang" use="optional"/>	
+				<xs:attribute name="href" type="xs:anyURI" use="optional" />
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
 	
 	<xs:complexType name="policy">
 		<xs:annotation>
@@ -125,6 +184,21 @@ attributeFormDefault="unqualified">
 		</xs:complexContent>
 	</xs:complexType>	
 	
+	<xs:complexType name="prerequisites">
+		<xs:annotation>
+			<xs:documentation>Description refinement typically used to described required prior education or competences</xs:documentation>
+		</xs:annotation>					
+		<xs:complexContent mixed="true">
+			<xs:restriction base="xcri:descriptionDType">
+				<xs:sequence>
+					<xs:element ref="x:div" minOccurs="0" />
+				</xs:sequence>
+				<xs:attribute ref="xml:lang" use="optional"/>	
+				<xs:attribute name="href" type="xs:anyURI" use="optional" />
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>	
+
 	<xs:complexType name="providedResource">
 		<xs:annotation>
 			<xs:documentation>Description refinement typically used to clarify resources that would be provided to learners by the institution</xs:documentation>
@@ -139,6 +213,21 @@ attributeFormDefault="unqualified">
 			</xs:restriction>
 		</xs:complexContent>
 	</xs:complexType>	
+	
+	<xs:complexType name="regulations">
+		<xs:annotation>
+			<xs:documentation>Description refinement typically used to specify regulations relevant to a course of study</xs:documentation>
+		</xs:annotation>					
+		<xs:complexContent mixed="true">
+			<xs:restriction base="xcri:descriptionDType">
+				<xs:sequence>
+					<xs:element ref="x:div" minOccurs="0" />
+				</xs:sequence>
+				<xs:attribute ref="xml:lang" use="optional"/>	
+				<xs:attribute name="href" type="xs:anyURI" use="optional" />
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
 
 	<xs:complexType name="requiredResource">
 		<xs:annotation>
@@ -246,4 +335,58 @@ attributeFormDefault="unqualified">
 	</xs:complexType>
 	<!--- End of extensible description vocabulary -->
 
+	<!--- Start of extensible relation vocabulary -->
+	<xs:simpleType name="hasPart">
+		<xs:annotation>
+			<xs:documentation>Typically used to indicate a component relation for a course</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xcri:relationDType" />
+	</xs:simpleType>
+
+	<xs:simpleType name="isPartOf">
+		<xs:annotation>
+			<xs:documentation>Typically used to indicate that a course is a component of another course</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xcri:relationDType" />
+	</xs:simpleType>
+	<!--- End of extensible relation vocabulary -->
+
+	<!-- Start of presentation mode vocabulary -->
+	<xs:simpleType name="studyModeType">
+		<xs:annotation>
+			<xs:documentation>Enumeration used to indicate the main mode of study for a particular presentation of a course</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Full Time"/>
+			<xs:enumeration value="Part Time"/>
+			<xs:enumeration value="Sandwich"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="attendanceModeType">
+		<xs:annotation>
+			<xs:documentation>Enumeration used to indicate the main mode of attendance for a particular presentation of a course</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Campus"/>
+			<xs:enumeration value="Distance with attendance"/>
+			<xs:enumeration value="Distance without attendance"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="attendancePatternType">
+		<xs:annotation>
+			<xs:documentation>Enumeration used to indicate the main pattern of attendance for a particular presentation of a course</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Daytime"/>
+			<xs:enumeration value="Evening"/>
+			<xs:enumeration value="Twilight"/>
+			<xs:enumeration value="Day/Block release"/>
+			<xs:enumeration value="Weekend"/>
+			<xs:enumeration value="Short"/>
+			<xs:enumeration value="Customised"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- End of presentation mode vocabulary -->
 </xs:schema>

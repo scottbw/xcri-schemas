@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://purl.org/net/qm"
+	xmlns:q="http://purl.org/net/qm" elementFormDefault="qualified"
+	xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+
+    <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+	<import schemaLocation="dc/dcterms.xsd" namespace="http://purl.org/dc/terms/" />
+	<import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc/dc.xsd"/>
+	
+	<annotation>
+		<documentation xml:lang="en">
+			This is an unofficial schema for
+			the CEN Qualification Information Model (TBC)
+		</documentation>
+	</annotation>
+
+	<complexType name="Resource">
+		<complexContent mixed="true">
+			<restriction base="anyType">
+				<sequence>
+					<any processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+				</sequence>
+				<attribute ref="xml:lang" use="optional" />
+			</restriction>
+		</complexContent>
+	</complexType>
+
+	<complexType name="Qualification">
+		<sequence>
+			<element ref="dc:identifier" maxOccurs="unbounded" minOccurs="0" />
+			<element ref="dc:title" maxOccurs="unbounded" minOccurs="0" />
+			<element ref="dc:description" maxOccurs="unbounded" minOccurs="0" />
+			<element ref="q:awardedBy" maxOccurs="unbounded" minOccurs="0" />
+			<element ref="q:accreditedBy" maxOccurs="unbounded" minOccurs="0" />
+			<element ref="q:type" maxOccurs="unbounded" minOccurs="0" />
+			<element ref="dcterms:educationLevel" maxOccurs="unbounded" minOccurs="0" />
+			<element ref="dcterms:hasPart"  maxOccurs="unbounded" minOccurs="0" />
+			<element ref="dcterms:isPartOf"  maxOccurs="unbounded" minOccurs="0" />
+		</sequence>
+	</complexType>
+
+	<element name="Qualification" type="q:Qualification" />
+	<element name="accreditedBy" type="q:Resource" />
+	<element name="awardedBy" type="q:Resource" />
+	<element name="type" type="string" />
+</schema>
