@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.w3.org/2003/01/geo/wgs84_pos#" 
+targetNamespace="http://www.w3.org/2003/01/geo/wgs84_pos#"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+
+<xs:simpleType name="lat">
+	<xs:restriction base="xs:string"/>
+</xs:simpleType>
+	
+<xs:simpleType name="long">
+	<xs:restriction base="xs:string"/>
+</xs:simpleType>
+
+<xs:simpleType name="point">				
+	<xs:restriction base="xs:string"/>
+</xs:simpleType>
+
+</xs:schema>
