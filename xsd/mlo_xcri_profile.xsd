@@ -16,6 +16,8 @@
  	<xs:documentation>
  	This is the profile of MLO used in XCRI; this schema redefines some of the base types in MLO adding
  	additional attributes and/or specifying child elements defined by other schemas
+ 	
+ 	Revised by Alan Paull, 30 October 2011
  	</xs:documentation>
  	</xs:annotation>
  
@@ -45,9 +47,7 @@
 			</xs:extension>
  			</xs:complexContent>
 			</xs:complexType>
-	</xs:redefine>
-	
-	<xs:redefine schemaLocation="mlo-strict.xsd">
+
  			<xs:complexType name="creditDType">
  			<xs:complexContent>
  			<xs:extension base="creditDType">
@@ -59,9 +59,7 @@
 			</xs:extension>
  			</xs:complexContent>
 			</xs:complexType>
-	</xs:redefine>
-	
-	<xs:redefine schemaLocation="mlo-strict.xsd">
+
  			<xs:complexType name="locationDType">
  			<xs:complexContent>
  			<xs:extension base="locationDType">
@@ -78,30 +76,24 @@
 			</xs:extension>
  			</xs:complexContent>
 			</xs:complexType>
-	</xs:redefine>
-	
-	<xs:redefine schemaLocation="mlo-strict.xsd">
- 			<xs:complexType name="startDType" mixed="true">
- 			<xs:complexContent>
+
+ 			<xs:complexType name="startDType">
+ 			<xs:simpleContent>
  			<xs:extension base="startDType">
-			<xs:attribute name="dtf" type="dateOrDateTimeDType"/>
-			</xs:extension>
- 			</xs:complexContent>
-			</xs:complexType>
-	</xs:redefine>
-	
-	 <xs:redefine schemaLocation="mlo-strict.xsd">
+ 			<xs:attribute name="dtf" type="dateOrDateTimeDType"/>
+ 			</xs:extension>
+ 			</xs:simpleContent>
+ 			</xs:complexType>
+
  			<xs:complexType name="durationDType" mixed="true">
- 			<xs:complexContent>
+ 			<xs:complexContent mixed="true">
  			<xs:extension base="durationDType">
 			<xs:attribute name="interval"/>
 			</xs:extension>
  			</xs:complexContent>
 			</xs:complexType>
-	</xs:redefine>
-	
-	<xs:redefine schemaLocation="mlo-strict.xsd">
- 			<xs:complexType name="prerequisiteDType">
+
+	 		<xs:complexType name="prerequisiteDType" mixed="true">
  			<xs:complexContent>
  			<xs:extension base="prerequisiteDType">
  			<xs:sequence>
@@ -112,10 +104,8 @@
  			</xs:extension>
  			</xs:complexContent>
 			</xs:complexType>
-	</xs:redefine>
-	
-	<xs:redefine schemaLocation="mlo-strict.xsd">
- 			<xs:complexType name="assessmentDType">
+
+ 			<xs:complexType name="assessmentDType" mixed="true">
  			<xs:complexContent>
  			<xs:extension base="assessmentDType">
  			<xs:sequence>
@@ -126,10 +116,8 @@
  			</xs:extension>
  			</xs:complexContent>
 			</xs:complexType>
-	</xs:redefine>
 
-	<xs:redefine schemaLocation="mlo-strict.xsd">
- 			<xs:complexType name="objectiveDType">
+ 			<xs:complexType name="objectiveDType" mixed="true">
  			<xs:complexContent>
  			<xs:extension base="objectiveDType">
  			<xs:sequence>
