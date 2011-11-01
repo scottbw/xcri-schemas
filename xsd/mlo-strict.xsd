@@ -143,9 +143,7 @@
 	<!-- Base types for extension -->
 	<xs:complexType name="qualificationDType"></xs:complexType>
 	<xs:complexType name="creditDType"></xs:complexType>
-	<xs:simpleType name="startDType">
-		<xs:restriction base="xs:string"/>
-	</xs:simpleType>
+	<xs:complexType name="startDType"/>
 	<xs:complexType name="durationDType"></xs:complexType>
 	<xs:complexType name="prerequisiteDType"></xs:complexType>
 	<xs:complexType name="assessmentDType"></xs:complexType>
