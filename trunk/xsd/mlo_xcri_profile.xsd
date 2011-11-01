@@ -77,12 +77,12 @@
  			</xs:complexContent>
 			</xs:complexType>
 
- 			<xs:complexType name="startDType">
- 			<xs:simpleContent>
+ 			<xs:complexType name="startDType" mixed="true">
+ 			<xs:complexContent>
  			<xs:extension base="startDType">
  			<xs:attribute name="dtf" type="dateOrDateTimeDType"/>
  			</xs:extension>
- 			</xs:simpleContent>
+ 			</xs:complexContent>
  			</xs:complexType>
 
  			<xs:complexType name="durationDType" mixed="true">
