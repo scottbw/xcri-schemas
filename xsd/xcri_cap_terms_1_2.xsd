@@ -25,7 +25,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to specify career outcomes for a course of study</xs:documentation>
 		</xs:annotation>				
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -40,7 +40,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to specify the number and style of contact hours that a learner should expect on a course of study</xs:documentation>
 		</xs:annotation>				
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -55,7 +55,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to specify the style of contact that a learner would receive on a course of study</xs:documentation>
 		</xs:annotation>				
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -70,7 +70,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to specify events relevant to a course of study, such as open days</xs:documentation>
 		</xs:annotation>				
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -85,7 +85,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to illustrate the kind of resources that would be used on a course of study, such as IT facilities and reading lists</xs:documentation>
 		</xs:annotation>					
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -100,7 +100,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to describe opportunties likely to flow from a course of study, such as opportunities for further study (course articulations)</xs:documentation>
 		</xs:annotation>					
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -115,7 +115,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to specify policies relevant to a course of study, such as diversity of adjustments for disability</xs:documentation>
 		</xs:annotation>					
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -130,7 +130,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to clarify resources that would be provided to learners by the institution</xs:documentation>
 		</xs:annotation>				
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -145,7 +145,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to clarify resources that the learner must provide in order to engage in a course of study</xs:documentation>
 		</xs:annotation>	
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -160,7 +160,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to highlight special features of a course of study</xs:documentation>
 		</xs:annotation>					
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -175,7 +175,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to specify support facilities available to learners</xs:documentation>
 		</xs:annotation>					
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -190,7 +190,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to provide an overview of the module composition of a course of study</xs:documentation>
 		</xs:annotation>					
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -205,7 +205,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to specify hours of study expected of a learner for successful completion</xs:documentation>
 		</xs:annotation>					
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -220,7 +220,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to specify the teaching strategies that will be employed on a course of study</xs:documentation>
 		</xs:annotation>				
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
@@ -235,7 +235,7 @@ attributeFormDefault="unqualified">
 			<xs:documentation>Description refinement typically used to specify a syllabus of topics that would be covered in a course of study</xs:documentation>
 		</xs:annotation>				
 		<xs:complexContent mixed="true">
-			<xs:restriction base="xcri:descriptionDType">
+			<xs:restriction base="dc:descriptionDType">
 				<xs:sequence>
 					<xs:element ref="x:div" minOccurs="0" />
 				</xs:sequence>
