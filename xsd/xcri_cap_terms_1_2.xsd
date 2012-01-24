@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema  
-xmlns="http://xcri.org/profiles/catalog/terms" 
+	xmlns="http://xcri.org/profiles/1.2/catalog/terms" 
 xmlns:x="http://www.w3.org/1999/xhtml" 
 xmlns:xcri="http://xcri.org/profiles/1.2/catalog" 
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
