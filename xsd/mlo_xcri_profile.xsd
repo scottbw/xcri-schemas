@@ -64,14 +64,14 @@
  			<xs:complexContent>
  			<xs:extension base="locationDType">
 			<xs:sequence>
-			<xs:element name="street" type="xs:string" minOccurs="0" />
-			<xs:element name="town" type="xs:string" minOccurs="0" />
-			<xs:element name="postcode" type="xs:string" minOccurs="0" />
-			<xs:element name="address" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="phone" type="xs:string" minOccurs="0" />
-			<xs:element name="fax" type="xs:string" minOccurs="0" />
-			<xs:element name="email" type="xs:string" minOccurs="0" />
-			<xs:element name="url" type="xs:string" minOccurs="0" />
+			<xs:element ref="street" minOccurs="0" />
+			<xs:element ref="town" minOccurs="0" />
+			<xs:element ref="postcode" minOccurs="0" />
+			<xs:element ref="address" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element ref="phone" minOccurs="0" />
+			<xs:element ref="fax" minOccurs="0" />
+			<xs:element ref="email" minOccurs="0" />
+			<xs:element ref="url" minOccurs="0" />
 			</xs:sequence>
 			</xs:extension>
  			</xs:complexContent>
@@ -129,5 +129,12 @@
  			</xs:complexContent>
 			</xs:complexType>
 	</xs:redefine>
- 
+	<xs:element name="street" type="xs:string" />
+	<xs:element name="town" type="xs:string"/>
+	<xs:element name="postcode" type="xs:string"/>
+	<xs:element name="address" type="xs:string"/>
+	<xs:element name="phone" type="xs:string"/>
+	<xs:element name="fax" type="xs:string"/>
+	<xs:element name="email" type="xs:string"/>
+	<xs:element name="url" type="xs:string"/> 
 </xs:schema>
