@@ -11,8 +11,8 @@ attributeFormDefault="unqualified">
 
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
 	<xs:import namespace="http://www.w3.org/1999/xhtml" schemaLocation="http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"/>
-	<xs:import namespace="http://xcri.org/profiles/1.2/catalog" schemaLocation="xcri_cap_1_2.xsd"/>
-	<xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+	<xs:import namespace="http://xcri.org/profiles/1.2/catalog" schemaLocation="http://www.xcri.co.uk/bindings/xcri_cap_1_2.xsd"/>
+	<xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="http://www.xcri.co.uk/bindings/dc.xsd"/>
     
 	<xs:annotation>
 		<xs:documentation xml:lang="en">See http://www.xcri.org/wiki/index.php/XCRI_Terms_1.2</xs:documentation>
